@@ -62,11 +62,14 @@ function_collection = [fx, fx2_p, fx3_p, fx2_t, fx3_t, fx4_t, fx2_i, fx3_i]
 function_number = 1
 
 if len(sys.argv) > 1:
-    function_choose = int(sys.argv[1])
-    if function_choose > 0 and function_choose <= len(function_collection):
-        function_number = function_choose
-    else:
-        print("Resolving as function 1...")
+    function_choose = sys.argv[1]
+    if function_choose.isdigit():
+        function_choose = int(function_choose)
+        if function_choose > 0 and function_choose <= len(function_collection):
+            function_number = function_choose
+
+
+        
 else:
     print("Usage: " + sys.argv[0] + " <function number>")
     print("Where function numbers are: ")
