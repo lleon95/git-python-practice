@@ -9,13 +9,13 @@ def fx(x):
     '''
     return x
 
-def fx2(x):
+def fx2_i(x):
     '''
     Irrational function exp(x)
     '''
     return [ math.exp(xi) for xi in x ]
 
-def fx3(x):
+def fx3_i(x):
     '''
     Irrational function sqrt(x)
     '''
@@ -25,7 +25,7 @@ def fx3(x):
 xval = [x * 0.1 for x in list(range(-30,31,1))]
 
 # Set default function
-function_collection = [fx, fx2, fx3]
+function_collection = [fx, fx2_i, fx3_i]
 function_number = 1
 
 if len(sys.argv) > 1:
