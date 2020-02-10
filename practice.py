@@ -3,26 +3,26 @@ import sys
 import math
 import matplotlib.pyplot as plt
 
+# Polynomial functions
 def fx(x):
     '''
     Initial function f(x)
     '''
     return x
 
-# Function 2
 def fx2_p(x):
     '''
     Polynomial function: f(x) = x**2
     '''
     return [ xi**2 for xi in x ]
 
-# Function 3
 def fx3_p(x):
     '''
     Polynomial function: f(x) = x**3
     '''
     return [ xi**3 for xi in x ]
 
+# Trigonometric functions
 def fx2_t(x):
     '''
     Trigonometric function f(x) = sin(x)
@@ -41,6 +41,7 @@ def fx4_t(x):
     '''
     return [ math.tan(xi) for xi in x ]
 
+# Irrational functions
 def fx2_i(x):
     '''
     Irrational function exp(x)
