@@ -40,6 +40,8 @@ else:
     print("Usage: " + sys.argv[0] + " <function number>")
     print("Where function numbers are: ")
     print("\t - 1. f(x) = x")
+    print("\t - 2. f(x) = x^2")
+    print("\t - 3. f(x) = x^3")
     print("Non-valid function numbers fallback to function 1")
     exit()
     
