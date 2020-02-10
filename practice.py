@@ -44,6 +44,9 @@ else:
     print("Usage: " + sys.argv[0] + " <function number>")
     print("Where function numbers are: ")
     print("\t - 1. f(x) = x")
+    print("\t - 2. f(x) = sin(x)")
+    print("\t - 3. f(x) = cos(x)")
+    print("\t - 4. f(x) = tan(x)")
     print("Non-valid function numbers fallback to function 1")
     exit()
     
