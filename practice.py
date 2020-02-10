@@ -9,19 +9,19 @@ def fx(x):
     '''
     return x
 
-def fx2(x):
+def fx2_t(x):
     '''
     Trigonometric function f(x) = sin(x)
     '''
     return [ math.sin(xi) for xi in x ]
 
-def fx3(x):
+def fx3_t(x):
     '''
     Trigonometric function f(x) = cos(x)
     '''
     return [ math.cos(xi) for xi in x ]
 
-def fx4(x):
+def fx4_t(x):
     '''
     Trigonometric function f(x) = tan(x)
     '''
@@ -31,7 +31,7 @@ def fx4(x):
 xval = [x * 0.1 for x in list(range(-30,31,1))]
 
 # Set default function
-function_collection = [fx, fx2, fx3, fx4]
+function_collection = [fx, fx2_t, fx3_t, fx4_t]
 function_number = 1
 
 if len(sys.argv) > 1:
