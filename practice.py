@@ -10,14 +10,14 @@ def fx(x):
     return x
 
 # Function 2
-def fx2(x):
+def fx2_p(x):
     '''
     Polynomial function: f(x) = x**2
     '''
     return [ xi**2 for xi in x ]
 
 # Function 3
-def fx3(x):
+def fx3_p(x):
     '''
     Polynomial function: f(x) = x**3
     '''
@@ -27,7 +27,7 @@ def fx3(x):
 xval = [x * 0.1 for x in list(range(-30,31,1))]
 
 # Set default function
-function_collection = [fx, fx2, fx3]
+function_collection = [fx, fx2_p, fx3_p]
 function_number = 1
 
 if len(sys.argv) > 1:
