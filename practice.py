@@ -19,6 +19,11 @@ if len(sys.argv) > 1:
     function_choose = int(sys.argv[1])
     if function_choose > 0 and function_choose <= len(function_collection):
         function_number = function_choose
+else:
+    print("Usage: " + sys.argv[0] + " <function number>")
+    print("Where function numbers are: ")
+    print("\t - 1. f(x) = x")
+    print("Non-valid function numbers fallback to function 1")
     
 yval = function_collection[function_number - 1](xval)
 
