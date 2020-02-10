@@ -24,6 +24,7 @@ else:
     print("Where function numbers are: ")
     print("\t - 1. f(x) = x")
     print("Non-valid function numbers fallback to function 1")
+    exit()
     
 yval = function_collection[function_number - 1](xval)
 
