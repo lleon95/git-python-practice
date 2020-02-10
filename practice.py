@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import sys
+import math
 import matplotlib.pyplot as plt
 
 def fx(x):
@@ -8,11 +9,17 @@ def fx(x):
     '''
     return x
 
+def fx2(x):
+    '''
+    Trigonometric function f(x) = sin(x)
+    '''
+    return [ math.sin(xi) for xi in x ]
+
 # Main execution line
 xval = [x * 0.1 for x in list(range(-50,51,1))]
 
 # Set default function
-function_collection = [fx]
+function_collection = [fx, fx2]
 function_number = 1
 
 if len(sys.argv) > 1:
