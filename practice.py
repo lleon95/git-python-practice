@@ -22,7 +22,7 @@ def fx3(x):
     return [ math.sqrt(abs(xi)) for xi in x ]
 
 # Main execution line
-xval = [x * 0.1 for x in list(range(-50,51,1))]
+xval = [x * 0.1 for x in list(range(-30,31,1))]
 
 # Set default function
 function_collection = [fx, fx2, fx3]
