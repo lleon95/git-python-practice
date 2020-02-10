@@ -41,11 +41,23 @@ def fx4_t(x):
     '''
     return [ math.tan(xi) for xi in x ]
 
+def fx2_i(x):
+    '''
+    Irrational function exp(x)
+    '''
+    return [ math.exp(xi) for xi in x ]
+
+def fx3_i(x):
+    '''
+    Irrational function sqrt(x)
+    '''
+    return [ math.sqrt(abs(xi)) for xi in x ]
+
 # Main execution line
 xval = [x * 0.1 for x in list(range(-30,31,1))]
 
 # Set default function
-function_collection = [fx, fx2_p, fx3_p, fx2_t, fx3_t, fx4_t]
+function_collection = [fx, fx2_p, fx3_p, fx2_t, fx3_t, fx4_t, fx2_i, fx3_i]
 function_number = 1
 
 if len(sys.argv) > 1:
@@ -63,6 +75,8 @@ else:
     print("\t - 4. f(x) = sin(x)")
     print("\t - 5. f(x) = cos(x)")
     print("\t - 6. f(x) = tan(x)")
+    print("\t - 7. f(x) = exp(x)")
+    print("\t - 8. f(x) = sqrt(|x|)")
     print("Non-valid function numbers fallback to function 1")
     exit()
     
